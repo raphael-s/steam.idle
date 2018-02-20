@@ -1,4 +1,6 @@
-idlemaster.log
-lib
-include
 bin
+idlemaster.log
+include
+lib
+pip-selfcheck.json
+settings.txt
