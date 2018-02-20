@@ -236,8 +236,6 @@ else:
     sys.exit()
 
 for appID, drops, value in games:
-    delay = DROP_DELAY
-    stillHaveDrops = 1
     maxFail = 2
 
     idleOpen(appID)
@@ -245,10 +243,10 @@ for appID, drops, value in games:
     logging.warning(getAppName(appID) + " has " +
                     str(drops) + " card drops remaining")
 
-    while stillHaveDrops == 1:
+    while True:
         try:
-            logging.warning("Sleeping for " + str(delay / 60) + " minutes")
-            time.sleep(delay)
+            logging.warning("Sleeping for " + str(DROP_DELAY / 60) + " minutes")
+            time.sleep(DROP_DELAY)
 
             logging.warning("Checking to see if " +
                             getAppName(appID) + " has remaining card drops")
@@ -259,7 +257,7 @@ for appID, drops, value in games:
                 "span", {"class": "progress_info_bold"})[0].contents[0]
             if "No card drops" in badgeLeftString:
                 logging.warning("No card drops remaining")
-                stillHaveDrops = 0
+                break
             else:
                 dropCount, junk = badgeLeftString.split(" ", 1)
                 logging.warning(getAppName(appID) + " has " +
