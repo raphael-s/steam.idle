@@ -238,7 +238,6 @@ else:
 for appID, drops, value in games:
     delay = DROP_DELAY
     stillHaveDrops = 1
-    numCycles = 50
     maxFail = 2
 
     idleOpen(appID)
@@ -250,9 +249,6 @@ for appID, drops, value in games:
         try:
             logging.warning("Sleeping for " + str(delay / 60) + " minutes")
             time.sleep(delay)
-            numCycles -= 1
-            if numCycles < 1:  # Sanity check against infinite loop
-                stillHaveDrops = 0
 
             logging.warning("Checking to see if " +
                             getAppName(appID) + " has remaining card drops")
