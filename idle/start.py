@@ -31,7 +31,7 @@ try:
     authData = {}
     authData["sort"] = ""
     authData["hasPlayTime"] = "false"
-    execfile("./settings.txt", authData)
+    execfile("../settings.txt", authData)
     myProfileURL = "http://steamcommunity.com/profiles/" + \
         authData["steamLogin"][:17]
 except:
