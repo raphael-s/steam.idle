@@ -23,6 +23,9 @@ To install this package on your machine simply run the following steps:
     $ source bin/activate
     $ pip install requests colorama BeautifulSoup4
 
+You dont have to run `source bin/activate` everytime you want to use the idler, the start
+script will already do that for you.
+
 Usage
 =====
 
