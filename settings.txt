@@ -1,5 +1,4 @@
 sessionid = ""
 steamLogin = ""
-steamparental = ""
-sort = ""
+sort = "mostvalue"
 hasPlayTime = "false"
