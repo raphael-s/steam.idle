@@ -19,7 +19,7 @@ To install this package on your machine simply run the following steps:
 
     $ git clone git@github.com:raphael-s/steam.idle.git
     $ cd steam.idle
-    $ virtualenv2.7 .
+    $ virtualenv-2.7 .
     $ source bin/activate
     $ pip install requests colorama BeautifulSoup4
 
