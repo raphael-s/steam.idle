@@ -6,7 +6,7 @@ Steam-Idle (OSX)
 
 A small package to idle steam games for card drops.
 
-Based on SteamIdleMaster <https://github.com/jshackles/idle_master>.
+Based on `SteamIdleMaster <https://github.com/jshackles/idle_master>`_.
 This package has been optimised for usage on OSX, it only includes the python source
 files and no longer contains the code for idling on windows.
 
@@ -28,7 +28,7 @@ Usage
 
 To start idling, you first have to edit the ``settings.txt`` file.
 In the file you have to set the values for ``sessionid`` and ``steamLogin``.
-To get those values, you have to open a session on steamcommunity.com <http://steamcommunity.com/>.
+To get those values, you have to open a session on `SteamCommunity <http://steamcommunity.com/>`_.
 After you signed into your account, you can get those two values from the cookies of the page.
 
 Important:
